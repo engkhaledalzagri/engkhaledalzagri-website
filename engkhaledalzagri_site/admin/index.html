@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>لوحة تحكم المحتوى - المهندس خالد الزقري</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+      /* تخصيص واجهة المستخدم */
+      :root {
+        --primary-color: #0a1f44;
+        --secondary-color: #e61e2a;
+      }
+      
+      body {
+        font-family: 'Cairo', 'Roboto', sans-serif;
+        direction: rtl;
+      }
+      
+      .css-1hvrgvd-CollectionTopContainer-CardCollection {
+        direction: rtl;
+      }
+      
+      .css-1f7nhiq-CollectionMain {
+        direction: rtl;
+      }
+      
+      .css-1gj57a0-SidebarHeading {
+        direction: rtl;
+        text-align: right;
+      }
+      
+      .css-v758ki-AppMainContainer, .css-12b66la-AppHeaderContent {
+        direction: rtl;
+      }
+      
+      .css-104dqk8-ToolbarSubSectionFirst {
+        direction: rtl;
+      }
+      
+      .css-12b66la-AppHeaderContent {
+        margin-right: 20px;
+      }
+      
+      .css-1f3mf5k-StyledModal {
+        direction: rtl;
+      }
+      
+      /* تخصيص الألوان */
+      .css-wfd1u4-Self-TopBarContainer {
+        background-color: var(--primary-color);
+      }
+      
+      .css-1hvrgvd-CollectionTopContainer-CardCollection {
+        background-color: #f8f9fa;
+      }
+      
+      .css-1vfzk61-ControlContainer {
+        border-color: var(--primary-color);
+      }
+      
+      .css-2oej7z-ToolbarContainer {
+        border-color: var(--primary-color);
+      }
+      
+      .css-1ib6v6b-SaveButton {
+        background-color: var(--secondary-color);
+      }
+      
+      .css-1ib6v6b-SaveButton:hover {
+        background-color: #c41822;
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="custom.js"></script>
+    <script>
+      // إضافة دعم للهوية في Netlify
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

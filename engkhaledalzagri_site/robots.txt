@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://engkhaledalzagri.netlify.app/sitemap.xml

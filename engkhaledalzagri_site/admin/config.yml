@@ -1,0 +1,100 @@
+backend:
+  name: github
+  repo: username/engkhaledalzagri1 # سيتم تغيير هذا لاحقًا بمعلومات المستخدم الصحيحة
+  branch: main # أو master حسب الفرع الرئيسي للمستودع
+
+media_folder: "images/uploads" # المجلد الذي سيتم تخزين الصور فيه
+public_folder: "/images/uploads" # المسار العام للصور في الموقع
+
+# إعدادات واجهة المستخدم
+locale: 'ar'
+site_url: https://engkhaledalzagri1.netlify.app
+display_url: https://engkhaledalzagri1.netlify.app
+logo_url: https://engkhaledalzagri1.netlify.app/images/logo.png
+
+# تعريف أنواع المحتوى
+collections:
+  - name: "pages"
+    label: "الصفحات الرئيسية"
+    files:
+      - name: "home"
+        label: "الصفحة الرئيسية"
+        file: "index.html"
+        fields:
+          - { label: "العنوان", name: "title", widget: "string" }
+          - { label: "وصف الموقع", name: "description", widget: "string" }
+          - label: "قسم البداية"
+            name: "hero_section"
+            widget: "object"
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "النص", name: "text", widget: "text" }
+              - { label: "زر التواصل", name: "button_text", widget: "string" }
+          
+          - label: "قسم الخدمات"
+            name: "services_section"
+            widget: "object"
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - label: "الخدمات"
+                name: "services"
+                widget: "list"
+                fields:
+                  - { label: "العنوان", name: "title", widget: "string" }
+                  - { label: "الوصف", name: "description", widget: "text" }
+                  - { label: "الصورة", name: "image", widget: "image" }
+                  - { label: "الرابط", name: "link", widget: "string" }
+          
+          - label: "قسم المشاريع"
+            name: "projects_section"
+            widget: "object"
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - label: "المشاريع"
+                name: "projects"
+                widget: "list"
+                fields:
+                  - { label: "العنوان", name: "title", widget: "string" }
+                  - { label: "الوصف", name: "description", widget: "text" }
+                  - { label: "الصورة", name: "image", widget: "image" }
+  
+  - name: "services"
+    label: "الخدمات"
+    folder: "/"
+    create: true
+    filter: {field: "layout", value: "service"}
+    fields:
+      - { label: "التخطيط", name: "layout", widget: "hidden", default: "service" }
+      - { label: "العنوان", name: "title", widget: "string" }
+      - { label: "الوصف", name: "description", widget: "text" }
+      - { label: "الصورة الرئيسية", name: "featured_image", widget: "image" }
+      - { label: "المحتوى", name: "body", widget: "markdown" }
+  
+  - name: "projects"
+    label: "المشاريع"
+    folder: "/"
+    create: true
+    filter: {field: "layout", value: "project"}
+    fields:
+      - { label: "التخطيط", name: "layout", widget: "hidden", default: "project" }
+      - { label: "العنوان", name: "title", widget: "string" }
+      - { label: "الوصف", name: "description", widget: "text" }
+      - { label: "الصورة الرئيسية", name: "featured_image", widget: "image" }
+      - { label: "تاريخ المشروع", name: "date", widget: "datetime" }
+      - { label: "المحتوى", name: "body", widget: "markdown" }
+      - label: "معرض الصور"
+        name: "gallery"
+        widget: "list"
+        field: { label: "صورة", name: "image", widget: "image" }
+  
+  - name: "blog"
+    label: "المدونة"
+    folder: "/"
+    create: true
+    filter: {field: "layout", value: "post"}
+    fields:
+      - { label: "التخطيط", name: "layout", widget: "hidden", default: "post" }
+      - { label: "العنوان", name: "title", widget: "string" }
+      - { label: "تاريخ النشر", name: "date", widget: "datetime" }
+      - { label: "الصورة المصغرة", name: "thumbnail", widget: "image" }
+      - { label: "المحتوى", name: "body", widget: "markdown" }

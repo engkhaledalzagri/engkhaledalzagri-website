@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل استخدام لوحة التحكم CMS - المهندس خالد الزقري</title>
+    <style>
+        body {
+            font-family: 'Cairo', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #212529;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #0a1f44;
+        }
+        h1 {
+            border-bottom: 3px solid #e61e2a;
+            padding-bottom: 10px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #dee2e6;
+            margin: 15px 0;
+        }
+        .note {
+            background-color: #f8f9fa;
+            border-right: 4px solid #e61e2a;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        ul {
+            padding-right: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .step {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #0a1f44;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>دليل استخدام لوحة التحكم CMS - المهندس خالد الزقري</h1>
+        
+        <div class="note">
+            <strong>ملاحظة هامة:</strong> تم تطوير لوحة التحكم هذه باستخدام Decap CMS (المعروف سابقًا باسم Netlify CMS) لتمكينك من إدارة محتوى موقعك بسهولة دون الحاجة إلى كتابة أي أكواد.
+        </div>
+        
+        <h2>مقدمة</h2>
+        <p>
+            تتيح لك لوحة التحكم CMS إدارة محتوى موقعك بسهولة، بما في ذلك:
+        </p>
+        <ul>
+            <li>تحرير محتوى الصفحات الرئيسية</li>
+            <li>إضافة وتعديل الخدمات</li>
+            <li>إضافة وتعديل المشاريع</li>
+            <li>إدارة مدونة الموقع</li>
+            <li>رفع وإدارة الصور والفيديوهات والملفات</li>
+        </ul>
+        
+        <h2>الوصول إلى لوحة التحكم</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            <p>قم بزيارة الرابط التالي: <code>https://engkhaledalzagri1.netlify.app/admin/</code></p>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            <p>قم بتسجيل الدخول باستخدام حساب GitHub الخاص بك (يجب أن يكون لديك صلاحيات الوصول إلى مستودع الموقع).</p>
+        </div>
+        
+        <h2>واجهة لوحة التحكم</h2>
+        <p>
+            بعد تسجيل الدخول، ستظهر لك واجهة لوحة التحكم التي تحتوي على الأقسام التالية:
+        </p>
+        <ul>
+            <li><strong>الصفحات الرئيسية:</strong> لتحرير محتوى الصفحات الثابتة مثل الصفحة الرئيسية.</li>
+            <li><strong>الخدمات:</strong> لإدارة خدمات الموقع.</li>
+            <li><strong>المشاريع:</strong> لإدارة المشاريع المعروضة في الموقع.</li>
+            <li><strong>المدونة:</strong> لإدارة منشورات المدونة.</li>
+            <li><strong>الوسائط:</strong> لإدارة الصور والملفات المرفوعة.</li>
+        </ul>
+        
+        <h2>تحرير الصفحات الرئيسية</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            <p>انقر على قسم "الصفحات الرئيسية" من القائمة الجانبية.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            <p>اختر الصفحة التي ترغب في تحريرها (مثل "الصفحة الرئيسية").</p>
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            <p>قم بتعديل المحتوى حسب الحاجة.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">4</span>
+            <p>انقر على زر "حفظ" لحفظ التغييرات.</p>
+        </div>
+        
+        <h2>إضافة خدمة جديدة</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            <p>انقر على قسم "الخدمات" من القائمة الجانبية.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            <p>انقر على زر "جديد الخدمات" لإضافة خدمة جديدة.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            <p>أدخل عنوان الخدمة ووصفها.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">4</span>
+            <p>قم برفع صورة للخدمة بالنقر على حقل "الصورة الرئيسية" واختيار صورة من جهازك.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">5</span>
+            <p>أدخل محتوى الخدمة في حقل "المحتوى" باستخدام محرر النصوص المتاح.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">6</span>
+            <p>انقر على زر "حفظ" لحفظ الخدمة الجديدة.</p>
+        </div>
+        
+        <h2>إضافة مشروع جديد</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            <p>انقر على قسم "المشاريع" من القائمة الجانبية.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            <p>انقر على زر "جديد المشاريع" لإضافة مشروع جديد.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            <p>أدخل عنوان المشروع ووصفه وتاريخه.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">4</span>
+            <p>قم برفع صورة للمشروع بالنقر على حقل "الصورة الرئيسية" واختيار صورة من جهازك.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">5</span>
+            <p>أدخل محتوى المشروع في حقل "المحتوى" باستخدام محرر النصوص المتاح.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">6</span>
+            <p>يمكنك إضافة صور إضافية للمشروع في قسم "معرض الصور".</p>
+        </div>
+        <div class="step">
+            <span class="step-number">7</span>
+            <p>انقر على زر "حفظ" لحفظ المشروع الجديد.</p>
+        </div>
+        
+        <h2>إضافة منشور جديد في المدونة</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            <p>انقر على قسم "المدونة" من القائمة الجانبية.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            <p>انقر على زر "جديد المدونة" لإضافة منشور جديد.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            <p>أدخل عنوان المنشور وتاريخ النشر.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">4</span>
+            <p>قم برفع صورة مصغرة للمنشور بالنقر على حقل "الصورة المصغرة" واختيار صورة من جهازك.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">5</span>
+            <p>أدخل محتوى المنشور في حقل "المحتوى" باستخدام محرر النصوص المتاح.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">6</span>
+            <p>انقر على زر "حفظ" لحفظ المنشور الجديد.</p>
+        </div>
+        
+        <h2>إدارة الوسائط (الصور والملفات)</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            <p>يمكنك الوصول إلى مكتبة الوسائط من خلال النقر على زر "الوسائط" في الشريط العلوي.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            <p>لرفع ملف جديد، انقر على زر "تحميل جديد" واختر الملف من جهازك.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            <p>يمكنك استخدام الملفات المرفوعة في أي مكان في الموقع عن طريق اختيارها من مكتبة الوسائط.</p>
+        </div>
+        
+        <h2>نشر التغييرات</h2>
+        <div class="note">
+            <p>
+                عند حفظ أي تغييرات في لوحة التحكم، يتم إرسالها إلى مستودع GitHub الخاص بالموقع، ثم يقوم Netlify تلقائيًا بنشر هذه التغييرات على الموقع المباشر.
+            </p>
+            <p>
+                قد يستغرق ظهور التغييرات على الموقع المباشر بضع دقائق بعد الحفظ.
+            </p>
+        </div>
+        
+        <h2>نصائح وإرشادات</h2>
+        <ul>
+            <li>احرص على استخدام صور ذات جودة عالية ولكن بحجم مناسب للويب (أقل من 500 كيلوبايت للصورة الواحدة).</li>
+            <li>يمكنك معاينة التغييرات قبل نشرها باستخدام زر "معاينة" المتاح في محرر المحتوى.</li>
+            <li>استخدم محرر النصوص المتاح لتنسيق المحتوى بشكل جذاب باستخدام العناوين والقوائم والروابط.</li>
+            <li>يمكنك إدراج الفيديوهات من YouTube أو Vimeo عن طريق إضافة رمز التضمين (Embed Code) في محرر النصوص.</li>
+        </ul>
+        
+        <h2>الدعم الفني</h2>
+        <p>
+            إذا واجهتك أي مشكلة في استخدام لوحة التحكم، يرجى التواصل مع فريق الدعم الفني.
+        </p>
+    </div>
+</body>
+</html>
