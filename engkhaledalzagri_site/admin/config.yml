@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: username/engkhaledalzagri1 # سيتم تغيير هذا لاحقًا بمعلومات المستخدم الصحيحة
+  repo: engkhaledalzagri1/engkhaledalzagri1 # سيتم تغيير هذا لاحقًا بمعلومات المستخدم الصحيحة
   branch: main # أو master حسب الفرع الرئيسي للمستودع
 
 media_folder: "images/uploads" # المجلد الذي سيتم تخزين الصور فيه
